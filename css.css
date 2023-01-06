@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Diplomata SC', cursive;
+}
+body{
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: black;
+    overflow: hidden;
+}
+
+section{
+    height: 100vh;
+    position: relative;
+    /* left:0%;
+    transform: translate(-50%); */
+}
+section h1{
+    top:50%;
+    left:30%;
+    transform: translate(-20%,-50%);
+    /* display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center; */
+    /* top:50%;
+    transform: translate(-50%,-50%);
+    left:50%; */
+    /* display: flex; */
+    position: absolute;
+    /* left:50%; */
+    color:rgb(0, 0, 0);
+}
+section h1 span{
+    letter-spacing: 15px;
+    display: inline-block;
+    font-size: 60px;
+    padding-left:10px;
+    /* margin-right: 20px ; */
+    width: 110px;
+    /* padding-right: 60px; */
+    /* background: linear-gradient(45deg,transparent 10%,rgb(167, 145, 18),rgb(3, 181, 101),transparent 90%); */
+    background: url(pngkey.com-fire-sparks-png-107881.png);
+    background-size:150px;
+    background-repeat: no-repeat;
+    background-position-x:-40px;
+    background-position-y:-20px;
+    
+    border-radius: 20px;
+    animation: animate 20s linear forwards;
+    /* box-shadow: 0 0 10px ; */
+}
+@keyframes animate {
+    0%{
+       opacity: 0; 
+        filter: blur(.4px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+        
+    }
+}
+section h1 span:nth-child(1){
+    animation-delay: -3.5s;
+}
+section h1 span:nth-child(2){
+    animation-delay: -3s;
+}
+section h1 span:nth-child(3){
+    animation-delay: -2.5s;
+}
+section h1 span:nth-child(4){
+    animation-delay: -2s;
+}
+section h1 span:nth-child(5){
+    animation-delay: -1.5s;
+}
+section h1 span:nth-child(6){
+    animation-delay: -1s;
+}
+section h1 span:nth-child(7){
+    animation-delay: -.5s;
+}
+video{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    /* left:-00px; */
+
+    /* height: 100vh; */
+}
+.img{
+    position: absolute;
+    z-index: -1;
+    opacity: .5;
+    width: 100%;
+    height: 100vh;
+}
